@@ -1,0 +1,3 @@
+# Encurtador De URL
+
+Encurtador de URLs utilizando um servidor express e MongoDB. O código recebe a URL como parâmetro e verifica se ela já exite no banco de dados, se não existir ela gera uma hash e adicina tanto a URL original quando a hash no banco de dados, se existir o servidor retorna a URL encurtada. Quando uma URL encurtada é acessada, pelo modelo "servidor.com/hash", o servidor procura a hash no banco de dados e redireciona para a página associada, caso a hash não exista no banco de dados o servidor retorna um erro.
